@@ -1,0 +1,12 @@
+FROM golang:1.12.0-alpine3.9 AS builder
+WORKDIR /go/src/github.com/call-me-snake/service_tg_bot
+COPY . .
+WORKDIR /go/src/github.com/call-me-snake/service_tg_bot/client
+RUN go install ./...
+
+FROM golang:1.12.0-alpine3.9 AS production
+COPY --from=builder /go/bin/cmd ./app
+
+#docker build -t cli_img -f ./docker/client-dockerfile .
+#docker run --name cli --net=test-net --env GRPC="172.19.0.3:50051" --env HTTP=":8000" --env NAME=SonyEricson --env ID=100 --env TOKEN=02dd716cdd8c9e3a2b76 -p 8000:8000 -it cli_img
+#docker run --name cli --net=test-net --env GRPC="test-net:50051" --env HTTP=":8000" --env NAME=SonyEricson --env ID=100 --env TOKEN=02dd716cdd8c9e3a2b76 -p 8000:8000 -it cli_img

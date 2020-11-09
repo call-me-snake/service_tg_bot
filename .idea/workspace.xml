@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb12b7c0-91c8-4573-bb96-d3a3aa2bac82" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="ProjectId" id="1jI9cMGFLJ16e4aCVyZlDOGRN99" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.dep.integrator" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kiddy_line_processor" />
+    <property name="settings.editor.selected.configurable" value="go.autoimport" />
+  </component>
+  <component name="RunManager" selected="Go Build.client">
+    <configuration name="client (1)" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="service_tg_bot" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="--http &quot;:8001&quot; --grpc &quot;localhost:50051&quot; --id 101 --name Iphone --token 8fb1d8d984417d8a525a " />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/client/cmd/main.go" />
+      <package value="github.com/call-me-snake/service_tg_bot/client/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="service_tg_bot" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="--http &quot;:8000&quot; --grpc &quot;localhost:50051&quot; --id 100 --name SonyEricson --token 02dd716cdd8c9e3a2b76" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/client/cmd/main.go" />
+      <package value="github.com/call-me-snake/service_tg_bot/client/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="service_tg_bot" />
+      <working_directory value="$PROJECT_DIR$/server" />
+      <parameters value="--bot-token=&quot;1486518377:AAHLaji3SFyLHZX1dYvjY_KM1F8-NPzGOh4&quot; --debugmode" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/server/cmd/main.go" />
+      <package value="github.com/call-me-snake/service_tg_bot/server/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test123 in github.com/call-me-snake/service_tg_bot/server/internal/storage" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="service_tg_bot" />
+      <working_directory value="$PROJECT_DIR$/server/internal/storage" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/call-me-snake/service_tg_bot/server/internal/storage" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest123\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="service_tg_bot" />
+      <working_directory value="$PROJECT_DIR$/server/internal/storage" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="github.com/call-me-snake/service_tg_bot/server/internal/storage" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/server/internal/storage/storage_test.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
+      <item itemvalue="Go Build.client (1)" />
+      <item itemvalue="Go Build.client" />
+      <item itemvalue="Go Build.server" />
+      <item itemvalue="Go Test.Test123 in github.com/call-me-snake/service_tg_bot/server/internal/storage" />
+      <item itemvalue="Go Test.go test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.client" />
+        <item itemvalue="Go Build.server" />
+        <item itemvalue="Go Test.Test123 in github.com/call-me-snake/service_tg_bot/server/internal/storage" />
+        <item itemvalue="Go Test.go test" />
+        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="404" y="228" width="1250" height="683" key="#Notifications" timestamp="1603536011655">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="404" y="228" width="1250" height="683" key="#Notifications/72.27.1848.1053@72.27.1848.1053" timestamp="1603536011655" />
+    <state x="299" y="405" width="1384" height="304" key="#SQL_Dialects" timestamp="1603792828040">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="299" y="405" width="1384" height="304" key="#SQL_Dialects/72.27.1848.1053@72.27.1848.1053" timestamp="1603792828040" />
+    <state x="662" y="161" width="800" height="753" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604934678338">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="662" y="161" width="800" height="753" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1604934678338" />
+    <state x="680" y="355" width="646" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604930571950">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="680" y="355" width="646" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1604930571950" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1604923911551">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1604923911551" />
+    <state width="1802" height="346" key="GridCell.Tab.0.bottom" timestamp="1604935656799">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="346" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1604935656799" />
+    <state width="1802" height="346" key="GridCell.Tab.0.center" timestamp="1604935656798">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="346" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1604935656798" />
+    <state width="1802" height="346" key="GridCell.Tab.0.left" timestamp="1604935656798">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="346" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1604935656798" />
+    <state width="1802" height="346" key="GridCell.Tab.0.right" timestamp="1604935656798">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="346" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1604935656798" />
+    <state width="1802" height="321" key="GridCell.Tab.1.bottom" timestamp="1604927519126">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="321" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1604927519126" />
+    <state width="1802" height="321" key="GridCell.Tab.1.center" timestamp="1604927519125">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="321" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1604927519125" />
+    <state width="1802" height="321" key="GridCell.Tab.1.left" timestamp="1604927519125">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="321" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1604927519125" />
+    <state width="1802" height="321" key="GridCell.Tab.1.right" timestamp="1604927519125">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1802" height="321" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1604927519125" />
+    <state width="263" height="514" key="HiddenNamespacesPopup" timestamp="1603880676065">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="263" height="514" key="HiddenNamespacesPopup/72.27.1848.1053@72.27.1848.1053" timestamp="1603880676065" />
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1604914527086">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1604914527086" />
+    <state x="729" y="496" width="534" height="121" key="com.goide.actions.debugger.GoReplayTraceAction$TraceDirDialog" timestamp="1604925920502">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="729" y="496" width="534" height="121" key="com.goide.actions.debugger.GoReplayTraceAction$TraceDirDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1604925920502" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1604925147316">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1604925147316" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/server/cmd/main.go</url>
+          <line>51</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

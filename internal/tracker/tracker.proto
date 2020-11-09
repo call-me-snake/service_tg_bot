@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+//protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative internal/tracker/tracker.proto
+option go_package = "internal/tracker";
+
+service Tracker{
+  rpc Register(TokenRequest) returns (ServerResponse);
+  rpc GetToken(TokenRequest)returns(ServerResponse);
+  rpc Synch (stream Heartbeat) returns (stream HeartbeatResponse);
+}
+
+message TokenRequest{
+  int64 id = 1;
+  string name = 2;
+}
+
+message ServerResponse{
+  string errorMessage = 1;
+  string token = 2;
+}
+
+message Heartbeat{
+  int64 id = 1;
+  string token = 2;
+}
+
+message HeartbeatResponse{
+  bool synched = 1;
+  string errorMessage = 2;
+}

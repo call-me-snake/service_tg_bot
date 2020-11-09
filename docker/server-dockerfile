@@ -1,0 +1,15 @@
+FROM golang:1.12.0-alpine3.9 AS builder
+WORKDIR /go/src/github.com/call-me-snake/service_tg_bot
+COPY . .
+WORKDIR /go/src/github.com/call-me-snake/service_tg_bot/server
+RUN go install ./...
+RUN apk update \
+        && apk upgrade \
+        && apk add --no-cache \
+        ca-certificates \
+        && update-ca-certificates 2>/dev/null || true
+
+FROM jwilder/dockerize AS production
+COPY --from=builder /go/bin/cmd ./app
+COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+#docker build -t test_img -f ./docker/server-dockerfile .

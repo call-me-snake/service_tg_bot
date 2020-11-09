@@ -1,0 +1,42 @@
+#docker-compose up --force-recreate --build
+#docker network create --driver bridge test-net
+version: '3.5'
+volumes:
+  postgres-data:
+    driver: local
+
+services:
+  db:
+    image: postgres:11.3-alpine
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql
+      - ./tables.sql:/docker-entrypoint-initdb.d/1.sql
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: devices
+      POSTGRES_USER: postgres
+
+  bot-service:
+    build:
+      context: '.'
+      dockerfile: ./docker/server-dockerfile
+    restart: always
+    ports:
+      - 50051:50051
+    environment:
+      GRPC: ":50051"
+      STORAGE: "user=postgres password=example dbname=devices sslmode=disable port=5432 host=db"
+      BOT_TOKEN: 1486518377:AAHLaji3SFyLHZX1dYvjY_KM1F8-NPzGOh4
+      LOGMODE: "console"
+      DEBUGMODE: "true"
+    depends_on:
+      - db
+    command: /bin/sh -c "dockerize -wait tcp://db:5432 -timeout 30s && /app"
+
+networks:
+  default:
+    external:
+      name: test-net
